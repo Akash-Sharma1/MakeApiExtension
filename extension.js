@@ -8,7 +8,7 @@ const fs = require('fs');
  */
 function activate(context) {
 
-	let disposable = vscode.commands.registerCommand('make-api-extension.getproject', function () {
+	let disposable = vscode.commands.registerCommand('make-api-extension.getproject', async function () {
 		
 		let folderPath = vscode.workspace.rootPath; 
 		
